@@ -1,8 +1,8 @@
 'use strict';
-const {send, json}        = require('micro');
+const {send} = require('micro');
 const {router, get, post} = require('microrouter');
-const rateLimit           = require('micro-ratelimit');
-const controller          = require('../../controller/index');
+const rateLimit = require('micro-ratelimit');
+const controller = require('../../controller/index');
 
 const hello = rateLimit({window: 5000, limit: 2}, (req, res) => {
 	send(res, 200, `Hello, ${req.params.who}`);
@@ -18,12 +18,12 @@ const namespaces = async (req, res) => {
 };
 
 const pods = async (req, res) => {
-    const pods = await controller.pods.pods();
-    send(res, 200, pods);
+	const pods = await controller.pods.pods();
+	send(res, 200, pods);
 };
 
 module.exports = router(
-	get('/hello/:who', hello),
+	post('/hello/:who', hello),
 	get('/namespaces', namespaces),
     get('/pods', pods),
 	get('/*', notFound),

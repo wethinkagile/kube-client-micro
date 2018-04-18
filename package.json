@@ -20,7 +20,6 @@
   "bin": "cli.js",
   "main": "index.js",
   "dependencies": {
-    "k8s-ops": "^1.0.6",
     "kubernetes-client": "^5.2.0",
     "micro": "^7.0.0",
     "micro-ratelimit": "^0.3.0",

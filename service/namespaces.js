@@ -1,16 +1,11 @@
 'use strict';
 
-const Client = require('kubernetes-client').Client
+const Client = require('kubernetes-client').Client;
 const config = require('kubernetes-client').config;
-
-const sanitizer = require('../lib/sanitizer');
-const log = require('../lib/logger');
-const createError = require('micro').createError;
-
+const logger = require('../lib/logger');
 
 module.exports.namespaces = async () => {
-
-	const client = new Client({ config: config.fromKubeconfig(), version: '1.9' });
+	const client = new Client({config: config.fromKubeconfig(), version: '1.9'});
 	await client.loadSpec();
 
 	return await client.api.v1.namespaces.get()
@@ -18,7 +13,7 @@ module.exports.namespaces = async () => {
 			return result;
 		})
 		.catch(err => {
-			log(err, this);
+			logger(err, this);
 			return err;
 		});
 };
