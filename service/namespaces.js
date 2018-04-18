@@ -10,10 +10,6 @@ const createError = require('micro').createError;
 
 module.exports.namespaces = async () => {
 
-	// if (!sanitizer.sanitizer("string",rawNameSpaceId)) {
-	// 	throw createError(422, 'Unprocessable Entity')
-	// }
-
 	const client = new Client({ config: config.fromKubeconfig(), version: '1.9' });
 	await client.loadSpec();
 

@@ -6,7 +6,7 @@ const config = require('kubernetes-client').config;
 const logger = require('../lib/logger');
 const createError = require('micro').createError;
 
-module.exports.pod = async () => {
+module.exports.pods = async () => {
 
     const client = new Client({ config: config.fromKubeconfig() });
 	await client.loadSpec();

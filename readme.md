@@ -15,8 +15,10 @@ $ npm dev
 
 This microservice can be deployed via any K8S Registry and *prod mode* be launched with `npm start`
 
+## API
 
-
+/pods
+/namespaces
 
 ## License
 

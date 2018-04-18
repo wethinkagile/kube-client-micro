@@ -13,19 +13,18 @@ const notFound = (req, res) => {
 };
 
 const namespaces = async (req, res) => {
-	const namespaces = await controller.namespace.namespaces();
+	const namespaces = await controller.namespaces.namespaces();
 	send(res, 200, namespaces);
 };
 
-const pod = async (req, res) => {
-    const pod = await controller.pod.pod();
-    send(res, 200, pod);
+const pods = async (req, res) => {
+    const pods = await controller.pods.pods();
+    send(res, 200, pods);
 };
-
 
 module.exports = router(
 	get('/hello/:who', hello),
 	get('/namespaces', namespaces),
-    get('/pod', pod),
+    get('/pods', pods),
 	get('/*', notFound),
 );
