@@ -32,6 +32,7 @@
     "ava": "^0.18.1",
     "got": "^6.7.1",
     "micro-dev": "^2.2.2",
+    "request-promise": "^4.2.2",
     "test-listen": "^1.0.1",
     "xo": "^0.17.1"
   }
