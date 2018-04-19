@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cb9fafa5-d5f2-4d14-acca-c4e077f7da2a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,8 +27,8 @@
           <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.travis.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="118" selection-start-line="18" selection-start-column="118" selection-end-line="18" selection-end-column="118" />
+                <state relative-caret-position="210">
+                  <caret line="14" selection-start-line="14" selection-end-line="26" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -102,9 +101,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="41" />
-    <option name="width" value="1680" />
+    <option name="x" value="27" />
+    <option name="y" value="37" />
+    <option name="width" value="1627" />
     <option name="height" value="984" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -188,15 +187,15 @@
       <option name="presentableId" value="Default" />
       <updated>1524055408192</updated>
       <workItem from="1524055410734" duration="7934000" />
-      <workItem from="1524138511313" duration="8609000" />
+      <workItem from="1524138511313" duration="8986000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16543000" />
+    <option name="totallyTimeSpent" value="16920000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="41" width="1680" height="984" extended-state="0" />
+    <frame x="27" y="37" width="1627" height="984" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.23154762" />
@@ -395,8 +394,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="118" selection-start-line="18" selection-start-column="118" selection-end-line="18" selection-end-column="118" />
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="26" selection-end-column="15" />
         </state>
       </provider>
     </entry>

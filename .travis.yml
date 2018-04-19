@@ -1,3 +1,21 @@
+sudo: "required"
+language: "node_js"
+node_js:
+  - "stable"
+services:
+  - "docker"
+before_install:
+  - docker build -t meshfields/kube-client-micro .
+  - docker run -d -p 127.0.0.1:80:4567 meshfields/kube-client-micro /bin/sh -c "cd /root/kube-client-micro; npm start;"
+  - docker ps -a
+  - docker run meshfields/kube-client-micro /bin/sh -c "cd /root/meshfields; npm test"
+
+script:
+  - npm test
+
+
+# NON DOCKER
+#
 #language: "node_js"
 #sudo: "false"
 #node_js:
@@ -9,16 +27,3 @@
 #  - "npm install"
 #script:
 #  - "npm test"
-
-sudo: "required"
-language: "node_js"
-services:
-  - "docker"
-before_install:
-  - docker build -t meshfields/kube-client-micro .
-  - docker run -d -p 127.0.0.1:80:4567 meshfields/kube-client-micro /bin/sh -c "cd /root/kube-client-micro; npm start;"
-  - docker ps -a
-  - docker run meshfields/kube-client-micro /bin/sh -c "cd /root/meshfields; npm test"
-
-script:
-  - npm test
