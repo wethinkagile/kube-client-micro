@@ -6,7 +6,7 @@
   "repository": "nottinhill/kube-client",
   "license": "MIT",
   "scripts": {
-    "start": "micro",
+    "start": "micro -p $PORT",
     "test": "xo && ava",
     "dev": "micro-dev"
   },

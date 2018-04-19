@@ -1,16 +1,20 @@
-FROM node:latest
+FROM node:carbon
 
-# Install npm modules
-RUN npm i
+# Create app directory
+WORKDIR /usr/src/app
 
-# copy source
-RUN mkdir -p /opt/source
-WORKDIR /opt/source
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+# where available (npm@5+)
+COPY package*.json ./
 
-# copy the package json and cache installed files
-ADD ./package.json /opt/source
 RUN npm install
+# If you are building your code for production
+# RUN npm install --only=production
 
-# start app
+# Bundle app source
+COPY . .
+
+ENV PORT="80"
 EXPOSE 80
-CMD ["npm", "start"]
+CMD [ "npm", "start" ]
