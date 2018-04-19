@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb9fafa5-d5f2-4d14-acca-c4e077f7da2a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -41,8 +38,8 @@
           <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Dockerfile">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="31" />
+                <state relative-caret-position="30">
+                  <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -50,8 +47,8 @@
           <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/.travis.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+                <state relative-caret-position="45">
+                  <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
                 </state>
               </provider>
             </entry>
@@ -72,8 +69,8 @@
           <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret selection-end-line="17" selection-end-column="3" />
+                <state relative-caret-position="390">
+                  <caret line="26" column="16" lean-forward="true" selection-end-line="42" />
                 </state>
               </provider>
             </entry>
@@ -120,10 +117,10 @@
         <option value="$PROJECT_DIR$/service/index.js" />
         <option value="$PROJECT_DIR$/lib/index.js" />
         <option value="$PROJECT_DIR$/routes/v1/routes.js" />
-        <option value="$PROJECT_DIR$/Dockerfile" />
         <option value="$PROJECT_DIR$/travis.yml" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/test.js" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -222,12 +219,12 @@
       <option name="presentableId" value="Default" />
       <updated>1524055408192</updated>
       <workItem from="1524055410734" duration="7934000" />
-      <workItem from="1524138511313" duration="3205000" />
+      <workItem from="1524138511313" duration="3811000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11139000" />
+    <option name="totallyTimeSpent" value="11745000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="49" width="1576" height="907" extended-state="0" />
@@ -397,24 +394,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="16" lean-forward="true" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="31" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="17" selection-end-column="3" />
+        <state relative-caret-position="45">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
         </state>
       </provider>
     </entry>
