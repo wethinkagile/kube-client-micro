@@ -9,9 +9,13 @@ before_install:
   - docker run -d -p 127.0.0.1:80:4567 meshfields/kube-client-micro /bin/sh -c "cd /root/kube-client-micro; npm start;"
   - docker ps -a
   - docker run meshfields/kube-client-micro /bin/sh -c "cd /root/meshfields; npm test"
-
 script:
   - npm test
+deploy:
+  provider: script
+  script: bash docker_push.sh
+  on:
+    branch: master
 
 
 # NON DOCKER
