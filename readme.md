@@ -13,13 +13,18 @@ $ npm dev
 
 ## Deployment
 
-This microservice can be deployed via any K8S Registry and *prod mode* be launched with `npm start`
+This microservice can be pulled in from [Dockerhub](https://hub.docker.com/r/meshfields/kube-client-micro) with
+
+`docker pull meshfields/kube-client-micro`
+
+
+*Prod mode* to be launched with `npm start`.
 
 ## API
 
 ```bash
-/pods
-/namespaces
+GET /pods
+GET /namespaces
 ```
 
 ## License
