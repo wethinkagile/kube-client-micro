@@ -22,6 +22,8 @@
   "dependencies": {
     "kubernetes-client": "^5.2.0",
     "micro": "^7.0.0",
+    "micro-compress": "^1.0.0",
+    "micro-cors": "^0.1.0",
     "micro-ratelimit": "^0.3.0",
     "microrouter": "^3.1.1",
     "npm": "^5.7.1",
@@ -32,6 +34,7 @@
     "ava": "^0.18.1",
     "got": "^6.7.1",
     "micro-dev": "^2.2.2",
+    "micro-middleware": "^0.1.0",
     "request-promise": "^4.2.2",
     "test-listen": "^1.0.1",
     "xo": "^0.17.1"
