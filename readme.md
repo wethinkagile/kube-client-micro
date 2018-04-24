@@ -7,9 +7,10 @@
 
 ```bash
 $ npm install
-$ npm dev
+$ npm start dev
 ```
 
+Dev Mode will use your local kube config.
 
 ## Deployment
 
@@ -18,7 +19,9 @@ This microservice can be pulled in from [Dockerhub](https://hub.docker.com/r/mes
 `docker pull meshfields/kube-client-micro`
 
 
-*Prod mode* to be launched with `npm start`.
+*Prod mode* to be launched with `NODE_ENV=production npm start`.
+
+Prod Mode will use in cluster config from your Kube API.
 
 ## API
 
