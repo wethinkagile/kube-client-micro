@@ -25,7 +25,7 @@ const notFound = async (req, res) => {
 };
 
 module.exports = cors(router(
-	get('/pods/:namespace', pods),
+	get('/:namespace/pods', pods),
 	get('/*', notFound),
 	post('/*', notFound)
 ));

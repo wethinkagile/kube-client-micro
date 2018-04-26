@@ -20,17 +20,24 @@ This microservice can be pulled in from [Dockerhub](https://hub.docker.com/r/mes
 
 ## Config Modes
 
-Dev Mode will use your local kube config.
+Development Mode will use your local kube config.
 
-Prod Mode will use in-cluster config from your Kube API.
+Production Mode will use in-cluster config from your Kube API.
 
 
 ## API
 
 ```bash
-GET /pods
-GET /namespaces
+GET /{NAMESPACE}/pods
 ```
+
+## Authentication
+
+Make sure to send a bearer token along in the header to get authenticate against Auth0.
+
+```
+curl --request GET --url 'http://localhost:3001/default/pods' --header 'authorization: Bearer {BEARER}' --header 'content-type: application/json'
+``
 
 ## License
 
