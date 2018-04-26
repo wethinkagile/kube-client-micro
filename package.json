@@ -8,7 +8,7 @@
   "scripts": {
     "start": "micro -p $PORT",
     "test": "NODE_ENV=development xo && ava",
-    "dev": "NODE_ENV=development micro-dev"
+    "dev": "NODE_ENV=development micro-dev -p $PORT"
   },
   "engines": {
     "node": ">= 6"
@@ -22,7 +22,9 @@
   "dependencies": {
     "kubernetes-client": "^5.2.0",
     "micro": "^7.0.0",
+    "micro-auth0": "^0.6.0",
     "micro-cors": "^0.1.0",
+    "micro-jwt-auth": "^1.9.0",
     "micro-ratelimit": "^0.3.0",
     "microrouter": "^3.1.1",
     "npm": "^5.7.1",

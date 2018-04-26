@@ -17,6 +17,7 @@ test('my endpoint', async t => {
 	service.close();
 });
 
+//
 // 'use strict';
 //
 // const listen = require('test-listen');
@@ -25,7 +26,7 @@ test('my endpoint', async t => {
 // const got = require('got');
 //
 // require('async-to-gen/register')({includes: /index\.js$/});
-// const app = require('./'); // eslint-disable-line import/order
+// const app = require('./index.js'); // eslint-disable-line import/order
 //
 // test('echo back the text', async t => {
 // 	const service = micro(app);
@@ -38,5 +39,5 @@ test('my endpoint', async t => {
 // 		body: JSON.stringify({text: 'Hello!'})
 // 	});
 //
-// 	t.is(res.body.text, 'Hello!');
+// 	t.is(res.body, 'Hello!');
 // });

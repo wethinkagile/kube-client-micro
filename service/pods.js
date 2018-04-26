@@ -5,10 +5,10 @@ if (process.env.NODE_ENV === 'development') {
 	const config = require('kubernetes-client').config;
 	const logger = require('../lib/logger');
 
-	module.exports.pods = async () => {
+	module.exports.pods = async namespace => {
 		const client = new Client({config: config.fromKubeconfig()});
 		await client.loadSpec();
-		return await client.api.v1.namespaces('default').pods.get()
+		return await client.api.v1.namespaces(namespace).pods.get()
 			.then(result => {
 				return result;
 			})
@@ -25,8 +25,8 @@ if (process.env.NODE_ENV === 'production') {
 	const logger = require('../lib/logger');
 	const core = new Api.Core(Api.config.getInCluster());
 
-	module.exports.pods = async () => {
-		return await core.namespaces('default').pods.get()
+	module.exports.pods = async namespace => {
+		return await core.namespaces(namespace).pods.get()
 			.then(result => {
 				return result;
 			})

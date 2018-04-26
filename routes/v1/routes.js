@@ -1,31 +1,31 @@
 'use strict';
 const {send} = require('micro');
 const {router, get, post} = require('microrouter');
-const rateLimit = require('micro-ratelimit');
+// const rateLimit = require('micro-ratelimit');
 const cors = require('micro-cors')();
+const auth0 = require('micro-auth0');
 const controller = require('../../controller/index');
 
-const hello = rateLimit({window: 5000, limit: 2}, (req, res) => {
-	send(res, 200, `Hello, ${req.params.who}`);
-});
-
-const notFound = (req, res) => {
-	send(res, 404, 'HTTP 404 - Endpoint not found');
-};
-
-const namespaces = async (req, res) => {
-	const namespaces = await controller.namespaces.namespaces();
-	send(res, 200, namespaces);
+let auth = async (req, res) => {
+	const user = await auth0(req, process.env.AUTH0_DOMAIN);
+	if (!user) {
+		return send(res, 403, {error: 'Forbidden'});
+	}
+	return;
 };
 
 const pods = async (req, res) => {
-	const pods = await controller.pods.pods();
+	await auth(req, res);
+	const pods = await controller.pods.pods(req.params.namespace);
 	send(res, 200, pods);
 };
 
+const notFound = async (req, res) => {
+	send(res, 404, 'HTTP 404 - Endpoint not found');
+};
+
 module.exports = cors(router(
-	post('/hello/:who', hello),
-	get('/namespaces', namespaces),
-	get('/pods', pods),
-	get('/*', notFound)
+	get('/pods/:namespace', pods),
+	get('/*', notFound),
+	post('/*', notFound)
 ));
