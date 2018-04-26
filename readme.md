@@ -27,6 +27,15 @@ Production Mode will use in-cluster config from your Kube API.
 
 ## API
 
+Working:
+
+```bash
+GET /default/pods
+```
+
+
+Next Version:
+
 ```bash
 GET /{NAMESPACE}/pods
 ```
