@@ -15,6 +15,7 @@ let auth = async (req, res) => {
 };
 
 const pods = async (req, res) => {
+	console.log(req.params.namespace);
 	await auth(req, res);
 	const pods = await controller.pods.pods(req.params.namespace);
 	send(res, 200, pods);

@@ -46,8 +46,8 @@ Make sure to send a bearer token along in the header to get authenticate against
 
 ```
 curl --request GET --url 'http://localhost:3001/default/pods' --header 'authorization: Bearer {BEARER}' --header 'content-type: application/json'
-``
+```
 
 ## License
 
-MIT © 2018 by Meshfields (Stephan Kristyn)
+MIT © 2018 by Meshfields
