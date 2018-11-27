@@ -58,8 +58,8 @@ typings/
 .env
 
 # IDEs and editors
-/.idea
-/.vscode
+.idea
+.vscode
 .project
 .classpath
 .c9/
