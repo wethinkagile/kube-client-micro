@@ -7,6 +7,8 @@
 
 ```bash
 $ npm install
+$ export NODE_ENV="development"
+$ export AUTH0_DOMAIN="<your domain>.eu.auth0.com"
 $ npm start dev
 ```
 
