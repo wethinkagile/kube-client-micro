@@ -4,14 +4,15 @@ const Client = require('kubernetes-client').Client;
 const config = require('kubernetes-client').config;
 const logger = require('../lib/logger');
 
+var client;
+
 if (process.env.NODE_ENV === 'production') {
-	var client = new Client({ config: config.getInCluster() });
-}
-else { // For development we use our local kubeconfig
-	var client = new Client({ config: config.fromKubeconfig() });
+	client = new Client({config: config.getInCluster()});
+} else { // For development we use our local kubeconfig
+	client = new Client({config: config.fromKubeconfig()});
 }
 
-module.exports.deployments = async (namespace) => {
+module.exports.deployments = async namespace => {
 	await client.loadSpec();
 	return await client.apis.apps.v1beta1.namespaces(namespace).deployments.get()
 		.then(result => {
