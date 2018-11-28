@@ -1,7 +1,13 @@
 # Kube-Client
 > NodeJS/Micro-based Client API to interact with Kubernetes API
 
-[![Build Status](https://travis-ci.org/nottinhill/kube-client-micro.svg?branch=master)](https://travis-ci.org/nottinhill/kube-client-micro) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/nottinhill/kube-client-micro/issues) [![HitCount](http://hits.dwyl.io/nottinhil/kube-client-micro.svg)](http://hits.dwyl.io/nottinhil/kube-client-micro)
+[![Build Status](https://travis-ci.org/nottinhill/kube-client-micro.svg?branch=master)](https://travis-ci.org/nottinhill/kube-client-micro) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/nottinhill/kube-client-micro/issues) [![HitCount](http://hits.dwyl.io/nottinhil/kube-client-micro.svg)](http://hits.dwyl.io/nottinhil/kube-client-micro) 
+
+## Tests
+
+```
+$ npm test
+```
 
 ## Usage
 
