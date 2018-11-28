@@ -12,9 +12,9 @@ if (process.env.NODE_ENV === 'production') {
 	client = new Client({config: config.fromKubeconfig()});
 }
 
-module.exports.pods = async namespace => {
+module.exports.deployments = async namespace => {
 	await client.loadSpec();
-	return await client.api.v1.namespaces(namespace).pods.get()
+	return await client.apis.apps.v1beta1.namespaces(namespace).deployments.get()
 		.then(result => {
 			return result;
 		})

@@ -7,6 +7,8 @@
 
 ```bash
 $ npm install
+$ export NODE_ENV="development"
+$ export AUTH0_DOMAIN="<your domain>.eu.auth0.com"
 $ npm start dev
 ```
 
@@ -30,14 +32,9 @@ Production Mode will use in-cluster config from your Kube API.
 Working:
 
 ```bash
-GET /default/pods
-```
-
-
-Next Version:
-
-```bash
+GET /namespaces
 GET /{NAMESPACE}/pods
+GET /{NAMESPACE}/deployments
 ```
 
 ## Authentication
