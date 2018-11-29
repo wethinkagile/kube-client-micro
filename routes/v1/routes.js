@@ -31,6 +31,11 @@ const deployments = async (req, res) => {
 	const pods = await controller.deployments.deployments(req.params.namespace);
 	send(res, 200, pods);
 };
+const deploymentsAllNamespaces = async (req, res) => {
+	await auth(req, res);
+	const pods = await controller.deploymentsAllNamespaces.deployments();
+	send(res, 200, pods);
+};
 
 const notFound = async (req, res) => {
 	send(res, 404, 'HTTP 404 - Endpoint not found');
@@ -40,6 +45,7 @@ module.exports = cors(router(
 	get('/:namespace/pods', pods),
 	get('/namespaces', namespaces),
 	get('/:namespace/deployments', deployments),
+	get('/deployments', deploymentsAllNamespaces),
 	get('/*', notFound),
 	post('/*', notFound)
 ));
