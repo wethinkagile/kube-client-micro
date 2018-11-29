@@ -33,7 +33,7 @@ const deployments = async (req, res) => {
 };
 const deploymentsAllNamespaces = async (req, res) => {
 	await auth(req, res);
-	const pods = await controller.deploymentsAllNamespaces.deployments();
+	const pods = await controller.deploymentsallnamespaces.deployments();
 	send(res, 200, pods);
 };
 
