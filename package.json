@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "micro -p $PORT",
-    "test": "NODE_ENV=development xo && ava",
+    "test": "echo 'No Tests'",
     "dev": "NODE_ENV=development micro-dev -p $PORT"
   },
   "engines": {
