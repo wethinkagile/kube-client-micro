@@ -53,4 +53,4 @@ curl --request GET --url 'http://localhost:3001/default/pods' --header 'authoriz
 
 ## License
 
-MIT © 2018 by Meshfields
+MIT © 2018 by SteveK
