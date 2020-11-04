@@ -23,7 +23,7 @@
     "kubernetes-client": "^6.4.1",
     "micro": "^9.3.3",
     "micro-auth0": "^0.6.0",
-    "micro-cors": "^0.1.0",
+    "micro-cors": "^0.1.1",
     "micro-jwt-auth": "^1.10.0",
     "micro-ratelimit": "^0.4.0",
     "microrouter": "^3.1.1",
