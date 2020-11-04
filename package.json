@@ -8,7 +8,9 @@
   "scripts": {
     "start": "micro -p $PORT",
     "test": "echo 'No Tests'",
-    "dev": "NODE_ENV=development micro-dev -p $PORT"
+    "dev": "NODE_ENV=development micro-dev -p $PORT",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "engines": {
     "node": ">= 6"
@@ -27,8 +29,9 @@
     "micro-jwt-auth": "^1.10.0",
     "micro-ratelimit": "^0.4.0",
     "microrouter": "^3.1.1",
-    "npm": "^6.4.1",
-    "update-notifier": "^2.5.0"
+    "npm": "^6.14.6",
+    "update-notifier": "^2.5.0",
+    "snyk": "^1.424.0"
   },
   "devDependencies": {
     "async-to-gen": "^1.3.2",
@@ -39,5 +42,6 @@
     "test-listen": "^1.0.1",
     "xo": "^0.23.0",
     "mem": ">=4.0.0"
-  }
+  },
+  "snyk": true
 }
