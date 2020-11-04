@@ -21,7 +21,7 @@
   "main": "index.js",
   "dependencies": {
     "kubernetes-client": "^6.4.1",
-    "micro": "^9.3.3",
+    "micro": "^9.3.4",
     "micro-auth0": "^0.6.0",
     "micro-cors": "^0.1.0",
     "micro-jwt-auth": "^1.10.0",
