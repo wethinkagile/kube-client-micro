@@ -1,0 +1,8 @@
++ webpack@5.14.0
+added 55 packages from 65 contributors and audited 1970 packages in 8.667s
+
+118 packages are looking for funding
+  run `npm fund` for details
+
+found 3 vulnerabilities (2 low, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
